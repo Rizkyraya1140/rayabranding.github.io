@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="logo" type="image/jpg" href="IDN.jpg"/>
+    <title>IDN Collection</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Warna latar belakang */
+            color: #333; /* Warna teks utama */
+        }
+        
+        header {
+            background-color: #ffffff; /* Warna latar belakang header */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap; /* Produk akan meluncur ke baris berikutnya saat tidak cukup lebar */
+            gap: 20px;
+            padding: 20px;
+            background-color: #ffffff; /* Warna latar belakang konten */
+            border-radius: 10px; /* Sudut melengkung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+
+        .product {
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px; /* Sudut melengkung */
+            background-color: #f9f9f9; /* Warna latar belakang produk */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            flex: 0 0 calc(33.33% - 20px); /* Produk akan menempati 1/3 lebar dengan jarak 20px */
+            margin-bottom: 20px; /* Jarak bawah antara produk */
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px; /* Lebar maksimum gambar */
+            height: auto;
+            border-radius: 10px; /* Sudut melengkung */
+        }
+
+        .product-info {
+            margin-top: 15px;
+        }
+
+        .product-info h1 {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .product-info p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        /* Media query untuk menata produk ke bawah saat lebar layar lebih kecil */
+        @media screen and (max-width: 768px) {
+            .product {
+                flex-basis: calc(50% - 20px); /* Produk akan menempati 1/2 lebar dengan jarak 20px */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .product {
+                flex-basis: 100%; /* Produk akan menempati seluruh lebar */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="image.html">Image</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+    <img src="IDN.jpg" width="250" alt="IDN Collection Logo">
+    <h1>IDN Collection</h1>
+</header>
+
+<div class="product-container">
+    <div class="product">
+        <img src="a.jpg" alt="Product 1">
+        <div class="product-info">
+            <h1>Product 1</h1>
+            <p>Price: Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="b.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 2</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="c.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 3</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="d.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 4</h1>
+            <p>Price: Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="e.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 5</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="f.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 6</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="g.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 7</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="h.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 8</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="j.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 9</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="k.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 10</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="l.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 11</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="m.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 12</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="n.jpg" alt="IDN Collection Logo">
+        <div class="product-info">
+            <h1>Product 13</h1>
+            <p>Price : Rp. 100.000.00</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
